@@ -1,0 +1,16 @@
+pipeline {
+    
+    agent { label 'master'}
+
+    stages {
+        
+        stage('git clone') {
+            steps {
+                // Get some code from a GitHub repository
+                git 'https://github.com/Chandu8866/game-of-life.git'
+
+               
+            }
+        }
+    }
+}
